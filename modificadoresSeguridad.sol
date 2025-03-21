@@ -6,8 +6,20 @@ pragma solidity ^0.8.26;
 contract seguridadMod {
     address public owner; 
     mapping (address => uint256) public balances; 
+
+    modifier onlyOwner(){
+        require(msg.sender==owner, "No tiene permiso para ejecutar esta funcion");
+        _;
+    }
+
+    modifier hasEnoughFunds(uint256 _amount){
+        require(balances[msg.sender] >= _amount, "Fondos insuficientes");
+        _;
+    }
+
+    constructor(){
+        owner = msg.sender;
+    }
+
 }
 
-modifier onlyOwner(){
-    require(msg.sender==owner, "No tiene permiso para ejecutar esta funcion";)
-}
