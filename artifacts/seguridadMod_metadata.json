@@ -31,6 +31,13 @@
 			},
 			{
 				"inputs": [],
+				"name": "depositar",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
 				"name": "owner",
 				"outputs": [
 					{
@@ -41,6 +48,30 @@
 				],
 				"stateMutability": "view",
 				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "retirarTodo",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_amount",
+						"type": "uint256"
+					}
+				],
+				"name": "withdrawal",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"stateMutability": "payable",
+				"type": "receive"
 			}
 		],
 		"devdoc": {
@@ -71,11 +102,11 @@
 	},
 	"sources": {
 		"modificadoresSeguridad.sol": {
-			"keccak256": "0x8b88f63cb4c54b952f74b51b184c5e195845a6248c6e21ce4e50dc960ce697f1",
+			"keccak256": "0xfa156da63a20926fe127e1d73215527947c70b12a7cb77b505f84b2ef5ccc39b",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://4c7c5f955ac1e55266160078ab41d7cff483964f7f4ea1833f0e7240abca5e92",
-				"dweb:/ipfs/QmbGoufmQkY3hkihDWYojURyKQXTxNfBZRE5V3XvaQHGR5"
+				"bzz-raw://6d1375699a9e0dfd736c55cc15a2b7c91d0e3ceee0fa1c9f3b1b1fe3b424d662",
+				"dweb:/ipfs/Qmc1TTbfwKEaWFYqUL8zwmogVr2QqSkvzT7wcboeyzhLeG"
 			]
 		}
 	},
